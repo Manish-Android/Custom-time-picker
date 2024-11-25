@@ -1,0 +1,44 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.CustomTimePicker" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.CustomTimePicker" parent="Base.Theme.CustomTimePicker" />
+
+    <!--     Time picker-->
+
+    <style name="BaseTheme.TimePicker" parent="ThemeOverlay.MaterialComponents.TimePicker">
+        <item name="materialClockStyle">@style/AppTheme.Widget.TimePicker.Clock</item>
+        <item name="chipStyle">@style/BaseTheme.Widget.Chip</item>
+
+        <item name="materialButtonOutlinedStyle">@style/AppTheme.Widget.TimePicker.Clock.AmPmButton
+        </item>
+        <item name="colorSurface">@color/white</item>
+    </style>
+
+
+    <!--    TimePicker Display style-->
+    <style name="BaseTheme.Widget.Chip" parent="Widget.MaterialComponents.TimePicker.Display">
+        <item name="android:textColor">@color/selector_text_chip</item>
+        <item name="chipBackgroundColor">@color/selector_bg_chip</item>
+
+    </style>
+
+
+    <!--    Clock style-->
+    <style name="AppTheme.Widget.TimePicker.Clock" parent="Widget.MaterialComponents.TimePicker.Clock">
+        <item name="clockFaceBackgroundColor">@android:color/holo_blue_bright</item>
+        <item name="clockHandColor">@android:color/white</item>
+        <item name="clockNumberTextColor">@color/black</item>
+    </style>
+
+    <!--    AM/PM Button style-->
+    <style name="AppTheme.Widget.TimePicker.Clock.AmPmButton" parent="Widget.MaterialComponents.TimePicker.Button">
+        <item name="backgroundTint">@color/selector_bg_chip</item>
+        <item name="strokeColor">@android:color/holo_blue_bright</item>
+        <item name="android:textColor">@color/selector_text_chip</item>
+    </style>
+
+</resources>
